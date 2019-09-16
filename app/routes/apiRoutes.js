@@ -5,7 +5,6 @@
 // ===============================================================================
 
 var friends = require("../data/friends");
-var waitListData = require("../data/waitinglistData");
 
 
 // ===============================================================================
@@ -19,13 +18,11 @@ module.exports = function(app) {
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-  app.get("/api/tables", function(req, res) {
+  app.get("/api/users", function(req, res) {
     res.json(friends);
   });
 
-  app.get("/api/waitlist", function(req, res) {
-    res.json(waitListData);
-  });
+  
 
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.

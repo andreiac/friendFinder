@@ -40,7 +40,7 @@
               <div class="form-group">
                 <label for="user-photo">
                   <h5>Link to photo image (required)</h5></label>
-                <input type="text" class="form-control" id="user-photo">
+                <input type="text" class="form-control" id="user-ohoto">
               </div>
               <hr>
           </div>
@@ -227,18 +227,18 @@
 
     // Here we grab the form elements
     var newUser = {
-      userName: $parseInt("#user-name").val().trim(),
+      userName: $("#user-name").val().trim(),
       userPhoto: $("#user-photo").val().trim(),
-      Question1: $parseInt("#question1").val().trim(),
-      Question2: $parseInt ("#question2").val().trim(),
-      Question3: $parseInt("#question3").val().trim(),
-      Question4: $parseInt("#question4").val().trim(),
-      Question5: $parseInt("#question5").val().trim(),
-      Question6: $parseInt("#question6").val().trim(),
-      Question7: $parseInt("#question7").val().trim(),
-      Question8: $parseInt("#question8").val().trim(),
-      Question9: $parseInt("#question9").val().trim(),
-      Question10: $parseInt("#question10").val().trim(),
+      Question1: $("#question1").parseInt().val().trim(),
+      Question2: $("#question2").val().trim(),
+      Question3: $("#question3").val().trim(),
+      Question4: $("#question4").val().trim(),
+      Question5: $("#question5").val().trim(),
+      Question6: $("#question6").val().trim(),
+      Question7: $("#question7").val().trim(),
+      Question8: $("#question8").val().trim(),
+      Question9: $("#question9").val().trim(),
+      Question10: $("#question10").val().trim(),
         };
 
     console.log(newUser);

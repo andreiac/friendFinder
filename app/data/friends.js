@@ -13,20 +13,17 @@ var tableArray = [
     phoneNumber: "000-000-0000"
   },
   {
-    name:"Ahmed",
-    photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    scores:[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
-      ]
+    userName:"Ahmed",
+    userPhoto:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    question1:4,
+    question2:2,
+    question3:4,
+    question4:5,
+    question6:3,
+    question7:2,
+    question8:3,
+    question9:4,
+    question10:2,
   }
   
 ];

@@ -216,17 +216,7 @@
   $(".submit").on("click", function (event) {
     event.preventDefault();
     // Form validation
-    function validateForm() {
-        var allCellsFilled = true;
-        $(".form-control").each(function() {
-          
-          if ($(this).val() === "") {
-            allCellsFilled = false;
-          }
-        });
-        return allCellsFilled;
-      }
-      if (validateForm()) {
+   
 
     // Here we grab the form elements
     var newUser = {
@@ -276,9 +266,7 @@
         $("#question10").val(" ");
         };
       });
-    } else {
-        alert("Please fill out all fields before submitting!");
-      }
+    
   });
 
 </script>

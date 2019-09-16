@@ -270,7 +270,7 @@
 
     $.post("/api/users", newUser,
       function (data) {
-        if(data){
+        
 
         // If a table is available... tell user they are booked.
         
@@ -291,7 +291,7 @@
         $("#question9").val(" ");
         $("#question10").val(" "); 
         alert("Please fill out all fields before submitting!");
-        };
+        ;
       });
     } 
   });

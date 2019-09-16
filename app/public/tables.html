@@ -78,14 +78,14 @@
   function runTableQuery() {
     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
     $.ajax({ url: "/api/tables", method: "GET" })
-      .then(function(tableData) {
+      .then(function(friends) {
 
-        // Here we then log the tableData to console, where it will show up as an object.
-        console.log(tableData);
+        // Here we then log the friends to console, where it will show up as an object.
+        console.log(friends);
         console.log("------------------------------------");
 
         // Loop through and display each of the customers
-        for (var i = 0; i < tableData.length; i++) {
+        for (var i = 0; i < friends.length; i++) {
 
           // Get a reference to the tableList element and populate it with tables
           var tableList = $("#tableList");
@@ -96,10 +96,10 @@
           listItem.append(
             $("<h2>").text("Table #" + (i + 1)),
             $("<hr>"),
-            $("<h2>").text("ID: " + tableData[i].customerID),
-            $("<h2>").text("Name: " + tableData[i].customerName),
-            $("<h2>").text("Email: " + tableData[i].customerEmail),
-            $("<h2>").text("Phone: " + tableData[i].phoneNumber)
+            $("<h2>").text("ID: " + friends[i].customerID),
+            $("<h2>").text("Name: " + friends[i].customerName),
+            $("<h2>").text("Email: " + friends[i].customerEmail),
+            $("<h2>").text("Phone: " + friends[i].phoneNumber)
           );
 
           tableList.append(listItem);

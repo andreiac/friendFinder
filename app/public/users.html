@@ -57,7 +57,7 @@
 
   function runUserQuery() {
     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-    $.ajax({ url: "/api/survey", method: "GET" })
+    $.ajax({ url: "/api/users", method: "GET" })
       .then(function(newUser) {
 
         // Here we then log the friends to console, where it will show up as an object.

@@ -217,20 +217,14 @@
     event.preventDefault();
     // Form validation
     function validateForm() {
-        var isValid = true;
+        var allCellsFilled = true;
         $(".form-control").each(function() {
+          
           if ($(this).val() === "") {
-            isValid = false;
+            allCellsFilled = false;
           }
         });
-
-        $(".chosen-select").each(function() {
-
-          if ($(this).val() === "") {
-            isValid = false;
-          }
-        });
-        return isValid;
+        return allCellsFilled;
       }
       if (validateForm()) {
 

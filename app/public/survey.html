@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Reservation Page</title>
+  <title>Survey Page</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -17,48 +17,181 @@
 
   <div class="container">
 
-    <div class="jumbotron">
+    <div>
       <h1 class="text-center">
-        <span class="fa fa-fire"></span> Hot Restaurant</h1>
+        Survey Questions</h1>
       <hr>
-      <h2 class="text-center">Make your reservation</h2>
-      <br>
-      <div class="text-center">
-        <a href="/tables">
-          <button class="btn btn-lg btn-primary">
-            <span class="fa fa-list-alt"></span> View Tables</button>
-        </a>
-        <a href="/">
-          <button class="btn btn-lg btn-default">
-            <span class="fa fa-home"></span>
-          </button>
-        </a>
-      </div>
+
     </div>
     <div class="row">
       <div class="col-lg-12">
         <!-- Reservation Page -->
         <div class="card">
-          <div class="card-header">
-            Table Reservation
+          
+          <div class="card-body">
+            <form role="form">
+              <div class="form-group">
+                  <h4>About You
+                    </h4>
+                <label for="user-name">
+                  <h5>Name (required)</h5></label>
+                <input type="text" class="form-control" id="user-name">
+              </div>
+              <div class="form-group">
+                <label for="user-photo">
+                  <h5>Link to photo image (required)</h5></label>
+                <input type="text" class="form-control" id="user-photo">
+              </div>
+              <hr>
           </div>
           <div class="card-body">
             <form role="form">
               <div class="form-group">
-                <label for="reserve-name">Name</label>
-                <input type="text" class="form-control" id="reserve-name">
+                <label for="question1">
+                  <h4>Question 1</h4>
+                </label>
+                <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+                <select type="text" class="form-control" id="question1">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="question2">
+                  <h4>Question 2</h4>
+                </label>
+                <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+                <select type="text" class="form-control" id="question2">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
               </div>
               <div class="form-group">
-                <label for="reserve-phone">Phone Number</label>
-                <input type="text" class="form-control" id="reserve-phone">
+                <label for="question3">
+                  <h4>Question 3</h4>
+                </label>
+                <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+                <select type="text" class="form-control" id="question3">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
               </div>
               <div class="form-group">
-                <label for="reserve-email">Email</label>
-                <input type="text" class="form-control" id="reserve-email">
+                <label for="question4">
+                  <h4>Question 4</h4>
+                </label>
+                <h5>You rarely do something just out of sheer curiosity.</h5>
+                <select type="text" class="form-control" id="question4">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
               </div>
               <div class="form-group">
-                <label for="reserve-unique-id">Unique ID</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
+                <label for="question5">
+                  <h4>Question 5</h4>
+                </label>
+                <h5>People can rarely upset you.
+                  </h5>
+                <select type="text" class="form-control" id="question5">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="question6">
+                  <h4>Question 6</h4>
+                </label>
+                <h5>It is often difficult for you to relate to other people’s feelings.
+                  </h5>
+                <select type="text" class="form-control" id="question6">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="question7">
+                  <h4>Question 7</h4>
+                </label>
+                <h5>In a discussion, truth should be more important than people’s sensitivities.
+                  </h5>
+                <select type="text" class="form-control" id="question7">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="question8">
+                  <h4>Question 8</h4>
+                </label>
+                <h5>You rarely get carried away by fantasies and ideas.
+                  </h5>
+                <select type="text" class="form-control" id="question8">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="question9">
+                  <h4>Question 9</h4>
+                </label>
+                <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+                  </h5>
+                <select type="text" class="form-control" id="question9">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="question10">
+                  <h4>Question 10</h4>
+                </label>
+                <h5>You feel more energetic after spending time with a group of people.
+                  </h5>
+                <select type="text" class="form-control" id="question10">
+                  <option value="" selected disabled>Select an option</option>
+                  <option>1 (strongly disagree)</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5 (strongly agree)</option>
+                </select>
               </div>
               <button type="submit" class="btn btn-primary submit">Submit</button>
             </form>
@@ -89,26 +222,34 @@
   // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
   // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
 
-  $(".submit").on("click", function(event) {
+  $(".submit").on("click", function (event) {
     event.preventDefault();
 
     // Here we grab the form elements
-    var newReservation = {
-      customerName: $("#reserve-name").val().trim(),
-      phoneNumber: $("#reserve-phone").val().trim(),
-      customerEmail: $("#reserve-email").val().trim(),
-      customerID: $("#reserve-unique-id").val().trim()
-    };
+    var newUser = {
+      userName: $("#user-name").val().trim(),
+      userPhoto: $("#user-photo").val().trim(),
+      Question1: $("#question1").val().trim(),
+      Question2: $("#question2").val().trim(),
+      Question3: $("#question3").val().trim(),
+      Question4: $("#question4").val().trim(),
+      Question5: $("#question5").val().trim(),
+      Question6: $("#question6").val().trim(),
+      Question7: $("#question7").val().trim(),
+      Question8: $("#question8").val().trim(),
+      Question9: $("#question9").val().trim(),
+      Question10: $("#question10").val().trim(),
+        };
 
-    console.log(newReservation);
+    console.log(newUser);
 
     // This line is the magic. It"s very similar to the standard ajax function we used.
     // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
     // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
     // depending on if a tables is available or not.
 
-    $.post("/api/tables", newReservation,
-      function(data) {
+    $.post("/api/tables", newUser,
+      function (data) {
 
         // If a table is available... tell user they are booked.
         if (data) {
@@ -121,10 +262,18 @@
         }
 
         // Clear the form when submitting
-        $("#reserve-name").val("");
-        $("#reserve-phone").val("");
-        $("#reserve-email").val("");
-        $("#reserve-unique-id").val("");
+        $("#user-name").val("");
+        $("#user-photo").val("");
+        $("#question1").val("");
+      $("#question2").val("");
+      $("#question3").val("");
+      $("#question4").val("");
+      $("#question5").val("");
+      $("#question6").val("");
+      $("#question7").val("");
+      $("#question8").val("");
+      $("#question9").val("");
+      $("#question10").val("");
 
       });
 

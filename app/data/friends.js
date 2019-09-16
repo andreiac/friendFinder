@@ -5,17 +5,11 @@
 // But you could have it be an empty array as well.
 // ===============================================================================
 
-var tableArray = [
-  {
-    customerName: "Ahmed",
-    customerEmail: "ahmed@example.com",
-    customerID: "afhaque89",
-    phoneNumber: "000-000-0000"
-  },
+var userArray = [
   {
     name:"Ahmed",
-    photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    scores:[
+    userphoto:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    questions:[
         5,
         1,
         4,
@@ -32,7 +26,7 @@ var tableArray = [
   {
     userName:"Ahmed",
     userPhoto:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    scores:[
+    questions:[
       5,
       1,
       4,
@@ -49,4 +43,4 @@ var tableArray = [
 ];
 
 // Note how we export the array. This makes it accessible to other files using require.
-module.exports = tableArray;
+module.exports = userArray;

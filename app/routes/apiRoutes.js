@@ -24,31 +24,41 @@ module.exports = function(app) {
 
   
 
-  // API POST Requests
-  // Below code handles when a user submits a form and thus submits data to the server.
-  // In each of the below cases, when a user submits form data (a JSON object)
-  // ...the JSON is pushed to the appropriate JavaScript array
-  // (ex. User fills out a reservation request... this data is then sent to the server...
-  // Then the server saves the data to the friends array)
-  // ---------------------------------------------------------------------------
-
   app.post("/api/users", function(req, res) {
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
-    // req.body is available since we're using the body parsing middleware
-    
-      friends.push(req.body);
-      
-  });
+    console.log(req.body.questions);
 
-  // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
+    // Receive user details (name, photo, scores)
+    var user = req.body;
 
-  app.post("/api/clear", function(req, res) {
-    // Empty out the arrays of data
-    friends.length = 0;
+    // parseInt for scores
+    for(var i = 0; i < user.questions.length; i++) {
+      user.questions[i] = parseInt(user.questions[i]);
+    }
 
-    res.json({ ok: true });
+    // default friend match is the first friend but result will be whoever has the minimum difference in scores
+    var bestFriendIndex = 0;
+    var minimumDifference = 40;
+
+    // in this for-loop, start off with a zero difference and compare the user and the ith friend scores, one set at a time
+    //  whatever the difference is, add to the total difference
+    for(var i = 0; i < userArray.length; i++) {
+      var totalDifference = 0;
+      for(var j = 0; j < userArray[i].questions.length; j++) {
+        var difference = Math.abs(user.questions[j] - userArray[i].questions[j]);
+        totalDifference += difference;
+      }
+
+      // if there is a new minimum, change the best friend index and set the new minimum for next iteration comparisons
+      if(totalDifference < minimumDifference) {
+        bestFriendIndex = i;
+        minimumDifference = totalDifference;
+      }
+    }
+
+    // after finding match, add user to friend array
+    userArray.push(user);
+
+    // send back to browser the best friend match
+    res.json(userArray[bestFriendIndex]);
   });
 };

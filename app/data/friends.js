@@ -7,8 +7,8 @@
 
 var userArray = [
   {
-    userName:"Ahmed",
-    userPhoto:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    userName:"Sawyer",
+    userPhoto:"https://i.pinimg.com/600x315/04/28/3e/04283e1a751ead27a75b13895119d6bc.jpg",
     questions:[
         5,
         1,
@@ -24,21 +24,37 @@ var userArray = [
   },
   
   {
-    userName:"Ahmed",
-    userPhoto:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    userName:"Tom",
+    userPhoto:"https://www.hindisoch.com/wp-content/uploads/2016/11/Funny-Pictures-Girlfriend-Wanted.jpg",
     questions:[
       5,
-      1,
       4,
       4,
+      3,
+      5,
       5,
       1,
       2,
-      5,
       4,
-      1
+      2
     ]
-  }
+  },
+  {
+    userName:"Taylor",
+    userPhoto:"https://media1.popsugar-assets.com/files/thumbor/exm6YM2WCm6az6Qac3GlxOth-ks/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/07/18/961/n/1922283/13a505305d30ecd8789188.96993200_/i/Funny-Memes-Tweets-About-Cats-Trailer.jpg",
+    questions:[
+        1,
+        2,
+        4,
+        3,
+        2,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
   
 ];
 
